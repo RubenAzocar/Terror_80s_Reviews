@@ -1,0 +1,92 @@
+/* RESET CSS - Elimina estilos por defecto del navegador */
+*{ /* Selecciona todos los elementos */
+    margin: 0;           /* Quita el margen exterior de todos los elementos */
+    padding: 0;          /* Quita el espacio interior de todos los elementos */
+    box-sizing: border-box;  /* Incluye padding y border en el ancho total */
+}
+
+/* ESTILOS DEL CUERPO DE LA PÁGINA */
+body {
+    font-family: georgia, serif;    /* Define la fuente principal como Georgia */
+    background-color: #1a1a1a;      /* Color de fondo gris muy oscuro */
+    color: white;                    /* Color del texto en blanco */
+}
+
+/* ESTILOS DEL ENCABEZADO */
+h1{ /* Estilo para el título principal */
+    font-size: 3rem;            /* Tamaño de fuente grande para el título */
+    color: #ff4444;         /* Color rojo para el título */
+    text-align: center;         /* Centra el texto del título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8); /* Sombra del texto del título */
+    letter-spacing: 2px;
+}
+h2{ /* Estilo para los subtítulos de nivel 2 */
+    font-size: 2.2rem;       /* Tamaño de fuente grande para los subtítulos */
+    color:#ff6666; /* Color rojo para los subtítulos */
+    margin-top: 40px; /* Espacio encima de los subtítulos */
+    margin-bottom:20px; /* Espacio debajo de los subtítulos */
+    border-bottom:3px solid #ff4444; /* Línea debajo de los subtítulos */
+    padding-bottom: 10px; /* Espacio debajo de los subtítulos */
+}
+h3{ /* Estilo para los subtítulos de nivel 3 */
+    font-size: 1.5rem;       /* Tamaño de fuente grande para los subtítulos */
+    color: #ffaaaa; /* Color rojo claro para los subtítulos */
+    margin-top: 25px; /* Espacio encima de los subtítulos */
+    margin-bottom: 15px; /* Espacio debajo de los subtítulos */
+}
+
+ul{
+    margin: 20px 0; /* Espacio arriba y abajo de la lista */
+    padding-left: 30px; /* Espacio a la izquierda de la lista */
+}
+
+li{
+    margin-bottom: 8px; /* Espacio debajo de cada elemento de la lista */
+    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+    list-style-type: none; /* Elimina los puntos de la lista */
+    position: relative; /* Posiciona el elemento relativo para usar pseudo-elementos */
+}
+
+li::before{ /* Pseudo-elemento para agregar un icono antes de cada elemento de la lista */
+   content:"🎬";
+   margin-right: 10px; /* Espacio a la derecha del icono */
+   transition: all 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+/* ESTILOS DE ENLACES */
+a {
+    color: #ff6666; /* Color base de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: all 0.3s ease; /* Transición suave para efectos hover */
+}
+
+a:hover {
+    color: #ff4444; /* Cambia el color del enlace al pasar el ratón */
+    text-shadow: 0 0 8px #ff4444; /* Agrega un brillo al enlace al pasar el ratón */
+}
+
+/* LAYOUT Y CONTENEDORES */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 40px 20px; /* Espacio interno del contenedor */
+    background-color:#2a2a2a; /* Color de fondo del contenedor */
+    border-radius: 10px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra del contenedor */
+    margin-top: 20px; /* Espacio encima del contenedor */ 
+    margin-bottom: 20px; /* Espacio debajo del contenedor */
+}
+ 
+/*ESTILOS DE PÁRRAFOS*/
+p{
+    line-height: 1.8; /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 15px; /* Espacio debajo de los párrafos */
+    text-align: justify; /* Alinea el texto a ambos lados */
+}
+
+/* ESPACIO GENERAL */
+section {
+    margin-bottom: 50px;
+}
+
