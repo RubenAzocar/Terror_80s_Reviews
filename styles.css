@@ -121,6 +121,13 @@ img {
 .gallery .item-galeria {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra los elementos hijos horizontalmente */
+  align-items: flex-start; /* Centra los elementos hijos horizontalmente */
 }
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
 

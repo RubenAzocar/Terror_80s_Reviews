@@ -41,7 +41,7 @@
          <div class="primera-fila">
           <div class="item-galeria">
          <a href="https://www.imdb.com/es/title/tt0081505/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_the%2520shining">
-         <img src="./assets/Shining.jpg" alt="the shining 1980" class="movie" width="300">
+         <img src="./assets/Shining.jpg" alt="the shining 1980" class="movie" width="300" height="450">
          </a>
          <p>Poster alternativo película<br>"The Shining (1980) de Stanley Kubrick</p>
          </div>
@@ -84,7 +84,7 @@
         <li><a href="https://www.rottentomatoes.com/">Rotten Tomatoes - Reviews y ratings</a></li>
         <li><a href="https://horror-fandom-com.translate.goog/wiki/Horror_Film_Wiki?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc">Horror Film Wiki - Enciclopedia del terror</a></li>
       </ul>
-      </div>
+      </div class="ratings">
       <h3>Tabla de Ratings y Datos</h3>
       <table>
         <tr>
@@ -123,9 +123,10 @@
           <td>7.4/10</td>
         </tr>
       </table>
-
+      </div>
       <h3>Envía tu Review</h3>
-    <form>
+  <div class="formulario">
+    <d>
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required placeholder="John Doe">
 
@@ -133,21 +134,28 @@
       <input type="email" id="email" name="email" required placeholder="terror@fakemail.com">
 
       <label for="pelicula">Película Favorita</label>
-      <select id="pelicula" name ="pelicula">
+      <select id="pelicula" name="pelicula">
         <option value="the-shining">The Shining (1980)</option>
         <option value="poltergeist">Poltergeist (1982)</option>
         <option value="the-thing">The Thing (1982)</option>
         <option value="nightmare">The Nightmare on Elm St. (1984)</option>
       </select>
 
+      
       <label for="rating">Rating:</label>
       <input type="number" id="rating" name="rating" min="1" max="10">
-
+    <div>
       <label for="comentario">Comentario:</label>
-      <textarea id="comentario" name="comentario"></textarea>
-
+      <textarea id="comentario" name="comentario" rows="6" cols="30"></textarea>
+    </div>
       <input type="submit" value="Enviar Review">
     </form>
+    <div class="comentario">
+      <p>¡Gracias por compartir tu opinión!</p>
   </div>
   </body>
+</html>
+    </div>
+  </body>
+
 </html>
